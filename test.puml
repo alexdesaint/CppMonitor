@@ -1,0 +1,93 @@
+@startuml
+class BlobException {
+	-errorMsg : const std::string
+	+whatchar *() const noexcept : const
+}
+
+class BlobEngine::Reader::JsonExplorer {
+	-value : JsonNode
+	-getRapidArray(const char *) : JsonNode
+	+goToBaseNode() : void
+	+goIn(const char *) : void
+	+goToArrayElement(const char *, int) : void
+	+hasMember(const char *) : bool
+	+getArraySize() : int
+	+getArraySize(const char *) : int
+	+getArrayInt(const char *, int) : int
+	+getArrayString(const char *, int) : std::string
+	+getInt(const char *) : int
+	+getString(const char *) : std::string
+	+getObject(const char *) : BlobEngine::Reader::JsonExplorer
+	+getArrayObject(int) : BlobEngine::Reader::JsonExplorer
+	+getArrayObject(const char *, int) : BlobEngine::Reader::JsonExplorer
+	+getArray(const char *) : BlobEngine::Reader::JsonExplorer
+	+printType() : void
+	+printMembers() : void
+}
+
+class BlobEngine::BlobGL::Buffer {
+	+uri : std::string
+	+byteLength : size_t
+	+data : int
+	+load(int, Reader::JsonExplorer) : void
+}
+
+class BlobEngine::BlobGL::ShaderProgram {
+	-program : GLuint
+	-vertexShader : GLuint
+	-fragmentShader : GLuint
+	+addVertexShader(std::string) : void
+	+addFragmentShader(std::string) : void
+	+linkShaders() : void
+	+getProgram() const : GLuint
+}
+
+class BlobEngine::BlobGL::VertexBufferObject {
+	-vertexBufferObject : GLuint
+	-dataType : GLenum
+	-typeSize : size_t
+	-dataSize : size_t
+	+setData(const int &) : void
+	+setData(const int &) : void
+	+setData(const int &) : void
+	+setData(const int &) : void
+	+setData(const int &) : void
+}
+
+class BlobEngine::BlobGL::VertexArrayObject {
+	-size : unsigned int
+	-vertexArrayObject : GLuint
+	+getVertexArrayObject() const : GLuint
+	+addBuffer(const BlobEngine::BlobGL::VertexBufferObject &, GLint, GLuint, GLuint) : void
+}
+
+class BlobEngine::Shape {
+	-points : int
+	-textCoords : int
+	-normals : int
+	-translateMatrix : glm::mat4
+	-rotateMatrix : glm::mat4
+	-scaleMatrix : glm::mat4
+	-shaderProgram : BlobEngine::BlobGL::ShaderProgram
+	-mvpLocation : GLint
+	+setVertexShaderProgram(const std::string &) : void
+	+setFragmentShaderProgram(const std::string &) : void
+	+linkShaders() : void
+	+setPosition(float, float, float) : void
+	+move(float, float, float) : void
+	+setRotation(float, float, float, float) : void
+	+rotate(float, float, float, float) : void
+	+setScale(float, float, float) : void
+	+rescale(float, float, float) : void
+	+getModelMatrix() : glm::mat4
+}
+
+class BlobEngine::Color {
+	-R : uint8_t
+	-G : uint8_t
+	-B : uint8_t
+}
+
+BlobEngine::Shape o--> BlobEngine::Color
+
+@enduml

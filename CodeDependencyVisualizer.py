@@ -1,23 +1,20 @@
 #!/usr/bin/env python
-
+# inspired by https://github.com/gklingler/CodeDependencyVisualizer
 import clang.cindex
-import sys
 import os
 import logging
-import argparse
 import fnmatch
 
 index = clang.cindex.Index.create()
 
+
 class UmlClass:
-    # Association between member property and PlantUML symbol
     MEMBER_PROP_MAP = {
         'private': '-',
         'public': '+',
         'protected': '#'
     }
 
-    # Links
     LINK_TYPE_MAP = {
         'inherit': '<|--',
         'aggregation': 'o--',
@@ -35,20 +32,77 @@ class UmlClass:
         self.protectedFields = []
         self.protectedMethods = []
 
-
     def addParentByFQN(self, fullyQualifiedClassName):
         self.parents.append(fullyQualifiedClassName)
 
-    def getId(self):
-        return "id" + str(hashlib.md5(self.fqn.encode('utf-8')).hexdigest())
+    def isEmbpty(self):
+        if not self.parents and not self.privateFields and not self.privateMethods and not self.publicFields and not self.publicMethods and not self.protectedFields and not self.protectedMethods:
+            return True
+        return False
 
-    def __repr__(self):
+    def __str__(self):
         r = ""
-        if self.nameSpace != None:
+        if self.nameSpace is not None:
             r += "namespace " + self.nameSpace
-        r += "class " + self.fqn + " {"
-        r += "}"
+        r += "class " + self.fqn + " {\n"
+
+        for p in self.privateFields:
+            r += "\t-" + p[0] + " : " + p[1] + "\n"
+        for p in self.publicFields:
+            r += "\t+" + p[0] + " : " + p[1] + "\n"
+
+        for p in self.privateMethods:
+            r += "\t-" + p[1] + p[2] + " : " + p[0] + "\n"
+        for p in self.publicMethods:
+            r += "\t+" + p[1] + p[2] + " : " + p[0] + "\n"
+        r += "}\n"
         return r
+
+
+class PumlFile:
+    LINK_TYPE_MAP = {
+        'inherit': '<|--',  # héritage
+        'aggregation': '<--o',  # une classe
+        'composition': '<--*',  # une classe mais ils sont dépendants
+        'association': '<--',  # un pointer
+        'dependency': '<..'  # est utilisé dans les entete
+    }
+
+    def __init__(self):
+        self.umlClass = {}
+        self.inherit = {}
+        self.aggregation = {}
+        self.composition = {}
+        self.association = {}
+        self.dependency = {}
+
+    def addClass(self, uml):
+        self.umlClass[uml.fqn] = uml
+
+    def __str__(self):
+        r = "@startuml\n"
+        for key, value in self.umlClass.items():
+            r += str(value)
+            r += "\n"
+
+        r += "@enduml\n"
+        return r
+
+    def linkClass(self):
+        for u in self.umlClass:
+            print(u)
+
+        print()
+        print("test :")
+
+        for uk, u in self.umlClass.items():
+            for v in [x for x in u.privateFields if x[1] in self.umlClass]:
+                u.privateFields.remove(v)
+                
+                print(v[1])
+
+
+pumlFile = PumlFile()
 
 
 def findFilesInDir(rootDir, patterns):
@@ -121,122 +175,66 @@ def processClassMemberDeclaration(umlClass, cursor):
             umlClass.protectedMethods.append((returnType, cursor.spelling, argumentTypes))
 
 
-def processClass(cursor, inclusionConfig):
+def processClass(cursor):
     """ Processes an ast node that is a class. """
-    umlClass = UmlClass()  # umlClass is the datastructure for the DotGenerator
-                           # that stores the necessary information about a single class.
-                           # We extract this information from the clang ast hereafter ...
+    umlClass = UmlClass()
     if cursor.kind == clang.cindex.CursorKind.CLASS_TEMPLATE:
-        # process declarations like:
-        #   template <typename T> class MyClass
         umlClass.fqn = cursor.spelling
     else:
-        # process declarations like:
-        #   class MyClass ...
-        #   struct MyStruct ...
-        umlClass.fqn = cursor.type.spelling  # the fully qualified name
-
-    import re
-    if (inclusionConfig['excludeClasses'] and
-            re.match(inclusionConfig['excludeClasses'], umlClass.fqn)):
-        return
-
-    if (inclusionConfig['includeClasses'] and not
-            re.match(inclusionConfig['includeClasses'], umlClass.fqn)):
-        return
+        umlClass.fqn = cursor.type.spelling
 
     for c in cursor.get_children():
-        # process member variables and methods declarations
         processClassMemberDeclaration(umlClass, c)
 
-    print(cursor.location.file)
-    print(inclusionConfig)
-
-    print(umlClass)
-    #dotGenerator.addClass(umlClass)
+    if not umlClass.isEmbpty():
+        pumlFile.addClass(umlClass)
 
 
-def traverseAst(cursor, inclusionConfig):
-    if (
+def traverseAst(cursor, dirs):
+    if (cursor.location.file is not None and (
             cursor.kind == clang.cindex.CursorKind.CLASS_DECL
-            #or cursor.kind == clang.cindex.CursorKind.STRUCT_DECL
             or cursor.kind == clang.cindex.CursorKind.CLASS_TEMPLATE
-    ):
-        # if the current cursor is a class, class template or struct declaration,
-        # we process it further ...
-        processClass(cursor, inclusionConfig)
+    )):
+        for d in dirs:
+            if d in os.path.normpath(cursor.location.file.name):
+                # print(str(os.path.normpath(cursor.location.file.name)) + " -- " + str(dirs))
+                # print(cursor.kind)
+                # print(cursor.type.spelling)
+                processClass(cursor)
+                break
+
     for child_node in cursor.get_children():
-        traverseAst(child_node, inclusionConfig)
+        traverseAst(child_node, dirs)
 
 
-def parseTranslationUnit(filePath, includeDirs, inclusionConfig):
+def parseTranslationUnit(filePath, srcDir, includeDirs):
     clangArgs = ['-x', 'c++'] + ['-I' + includeDir for includeDir in includeDirs]
     tu = index.parse(filePath, args=clangArgs, options=clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
     for diagnostic in tu.diagnostics:
-        logging.debug(diagnostic)
-    logging.info('Translation unit:' + tu.spelling + "\n")
-    traverseAst(tu.cursor, inclusionConfig)
+        print(diagnostic)
+    # print('Translation unit:' + tu.spelling + "\n")
+
+    dirs = []
+    dirs.extend(includeDirs)
+    dirs.append(srcDir)
+    traverseAst(tu.cursor, dirs)
 
 
-directory = "../BlobEngine/src/"
-include = "../BlobEngine/include/BlobEngine/BlobGL"
+# directory = '../BlobTest/src'
+# include = ['../BlobTest/include']
+
+directory = '../BlobEngine/src/BlobEngine/BlobGL'
+include = ['..\\BlobEngine\\include']
 withUnusedHeaders = False
-excludeClasses = ""
-includeClasses = ""
 
-filesToParsePatterns = ['*.cpp', '*.cxx', '*.c', '*.cc']
-if withUnusedHeaders:
-    filesToParsePatterns += ['*.h', '*.hxx', '*.hpp']
-filesToParse = findFilesInDir(directory, filesToParsePatterns)
+directory = os.path.abspath(os.path.normpath(directory))
+for idx, val in enumerate(include):
+    include[idx] = os.path.abspath(os.path.normpath(val))
+
+filesToParse = findFilesInDir(directory, ['*.cpp', '*.cxx', '*.c', '*.cc'])
+
 for sourceFile in filesToParse:
-        logging.info("parsing file " + sourceFile)
-        parseTranslationUnit(sourceFile, include, {'excludeClasses': excludeClasses, 'includeClasses': includeClasses})
+    parseTranslationUnit(sourceFile, directory, include)
 
-"""
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="CodeDependencyVisualizer (CDV)")
-    parser.add_argument('-d', required=True, help="directory with source files to parse (searches recusively)")
-    parser.add_argument('-o', '--outFile', default='uml.dot', help="output file name / name of generated dot file")
-    parser.add_argument('-u', '--withUnusedHeaders', help="parse unused header files (slow)")
-    parser.add_argument('-a', '--associations', action="store_true", help="draw class member assiciations")
-    parser.add_argument('-i', '--inheritances', action="store_true", help="draw class inheritances")
-    parser.add_argument('-p', '--privMembers', action="store_true", help="show private members")
-    parser.add_argument('-t', '--protMembers', action="store_true", help="show protected members")
-    parser.add_argument('-P', '--pubMembers', action="store_true", help="show public members")
-    parser.add_argument('-I', '--includeDirs', help="additional search path(s) for include files (seperated by space)", nargs='+')
-    parser.add_argument('-v', '--verbose', action="store_true", help="print verbose information for debugging purposes")
-    parser.add_argument('--excludeClasses', help="classes matching this pattern will be excluded")
-    parser.add_argument('--includeClasses', help="only classes matching this pattern will be included")
-
-    args = vars(parser.parse_args(sys.argv[1:]))
-
-    filesToParsePatterns = ['*.cpp', '*.cxx', '*.c', '*.cc']
-    if args['withUnusedHeaders']:
-        filesToParsePatterns += ['*.h', '*.hxx', '*.hpp']
-    filesToParse = findFilesInDir(args['d'], filesToParsePatterns)
-    subdirectories = [x[0] for x in os.walk(args['d'])]
-
-    loggingFormat = "%(levelname)s - %(module)s: %(message)s"
-    logging.basicConfig(format=loggingFormat, level=logging.INFO)
-    if args['verbose']:
-        logging.basicConfig(format=loggingFormat, level=logging.DEBUG)
-
-    logging.info("found " + str(len(filesToParse)) + " source files.")
-
-    for sourceFile in filesToParse:
-        logging.info("parsing file " + sourceFile)
-        parseTranslationUnit(sourceFile, args['includeDirs'], {
-            'excludeClasses': args['excludeClasses'],
-            'includeClasses': args['includeClasses']})
-
-    dotGenerator.setDrawAssociations(args['associations'])
-    dotGenerator.setDrawInheritances(args['inheritances'])
-    dotGenerator.setShowPrivMethods(args['privMembers'])
-    dotGenerator.setShowProtMethods(args['protMembers'])
-    dotGenerator.setShowPubMethods(args['pubMembers'])
-
-    dotfileName = args['outFile']
-    logging.info("generating dotfile " + dotfileName)
-    with open(dotfileName, 'w') as dotfile:
-        dotfile.write(dotGenerator.generate())
-"""
+pumlFile.linkClass()
+# print(pumlFile)
