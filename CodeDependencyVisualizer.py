@@ -7,7 +7,6 @@ import fnmatch
 
 index = clang.cindex.Index.create()
 
-
 class UmlClass:
     MEMBER_PROP_MAP = {
         'private': '-',
@@ -103,7 +102,6 @@ class PumlFile:
 
 
 pumlFile = PumlFile()
-
 
 def findFilesInDir(rootDir, patterns):
     """ Searches for files in rootDir which file names mathes the given pattern. Returns
@@ -207,8 +205,8 @@ def traverseAst(cursor, dirs):
         traverseAst(child_node, dirs)
 
 
-def parseTranslationUnit(filePath, srcDir, includeDirs):
-    clangArgs = ['-x', 'c++'] + ['-I' + includeDir for includeDir in includeDirs]
+def parseTranslationUnit(filePath, srcDir, clangArgs):
+    #clangArgs = ['-x', 'c++'] + ['-I' + includeDir for includeDir in includeDirs]
     tu = index.parse(filePath, args=clangArgs, options=clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
     for diagnostic in tu.diagnostics:
         print(diagnostic)
@@ -223,18 +221,43 @@ def parseTranslationUnit(filePath, srcDir, includeDirs):
 # directory = '../BlobTest/src'
 # include = ['../BlobTest/include']
 
-directory = '../BlobEngine/src/BlobEngine/BlobGL'
-include = ['..\\BlobEngine\\include']
+directory = '../BlobManager/src/'
+#include = ['../BOmberBlob/include']
+jsonCompileCommand = '../BlobManager/cmake-build-debug/'
 withUnusedHeaders = False
 
+compdb = clang.cindex.CompilationDatabase.fromDirectory(jsonCompileCommand)
+
 directory = os.path.abspath(os.path.normpath(directory))
-for idx, val in enumerate(include):
-    include[idx] = os.path.abspath(os.path.normpath(val))
+#for idx, val in enumerate(include):
+#    include[idx] = os.path.abspath(os.path.normpath(val))
 
 filesToParse = findFilesInDir(directory, ['*.cpp', '*.cxx', '*.c', '*.cc'])
 
 for sourceFile in filesToParse:
-    parseTranslationUnit(sourceFile, directory, include)
+    try:
+        file_args = compdb.getCompileCommands(sourceFile)
+
+        for i in range(len(file_args)):
+            print("cc" + str(i) + " arguments :")
+            cc = file_args[i]
+            clangArgs = []
+            conf.
+            for j in range(len(cc.arguments)):
+                ccc = cc[j]
+                print(ccc)
+                clangArgs.append(ccc)
+            #clangArgs.pop(0)
+            #clangArgs.pop(0)
+            print(clangArgs[1])
+            print()
+            clangArgs = [clangArgs[1]]
+            os.chdir(cc.directory)
+            parseTranslationUnit(cc.filename, directory, cc.arguments)
+    except Exception as ex:
+        template = "An exception of type {0} occurred. Arguments:\n{1!r}"
+        message = template.format(type(ex).__name__, ex.args)
+        print(message)
 
 pumlFile.linkClass()
-# print(pumlFile)
+print(pumlFile)

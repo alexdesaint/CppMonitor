@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\msys64\\mingw64\\bin\\python3.7.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
