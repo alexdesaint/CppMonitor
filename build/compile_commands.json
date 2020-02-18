@@ -1,0 +1,385 @@
+[
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/main.cpp.o -c /home/patapouf/Project/BomberBlob/src/main.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/main.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/Game.cpp.o -c /home/patapouf/Project/BomberBlob/src/Game.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/Game.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/Menu.cpp.o -c /home/patapouf/Project/BomberBlob/src/Menu.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/Menu.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/BomberBlob.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/BomberBlob.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/BomberBlob.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Bomb.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Bomb.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Bomb.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Bonus.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Bonus.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Bonus.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/BombManager.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/BombManager.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/BombManager.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Box.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Box.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Box.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Explosion.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Explosion.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Explosion.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/IndestructibleBox.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/IndestructibleBox.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/IndestructibleBox.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Bomber.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Bomber.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Bomber.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include    -std=gnu++17 -o src/CMakeFiles/BomberMan.dir/BomberBlob/Textures.cpp.o -c /home/patapouf/Project/BomberBlob/src/BomberBlob/Textures.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/src/BomberBlob/Textures.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/libs/CMakeFiles/imgui.dir/imgui/imgui.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/libs/CMakeFiles/imgui.dir/imgui/imgui_demo.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_demo.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_demo.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/libs/CMakeFiles/imgui.dir/imgui/imgui_draw.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_draw.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_draw.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/libs/CMakeFiles/imgui.dir/imgui/imgui_widgets.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_widgets.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui/imgui_widgets.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc  -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include    -o libs/BlobEngine/libs/glad/src/CMakeFiles/glad.dir/glad.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/src/glad.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/src/glad.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm/glm/..    -O2 -Wno-long-long -std=c++17 -o libs/BlobEngine/libs/glm/glm/CMakeFiles/glm_static.dir/detail/glm.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm/glm/detail/glm.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm/glm/detail/glm.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/context.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/context.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/context.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/init.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/init.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/init.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/input.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/input.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/input.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/monitor.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/monitor.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/monitor.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/vulkan.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/vulkan.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -Wdeclaration-after-statement -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/window.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/window.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/window.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_init.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_init.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_monitor.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_monitor.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_window.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/x11_window.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/xkb_unicode.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/xkb_unicode.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/posix_time.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/posix_time.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/posix_thread.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/posix_thread.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/glx_context.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/glx_context.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/egl_context.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/egl_context.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/osmesa_context.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/osmesa_context.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/cc -D_GLFW_USE_CONFIG_H -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src -Ilibs/BlobEngine/libs/glfw/src  -fPIC   -Wall -o libs/BlobEngine/libs/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o   -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/linux_joystick.c",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/src/linux_joystick.c"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/src/CMakeFiles/BlobControls.dir/Controls.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Controls.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Controls.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include    -std=gnu++17 -o libs/BlobEngine/src/CMakeFiles/BlobTime.dir/Time.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Time.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Time.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/FrameBufferObject.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/FrameBufferObject.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/FrameBufferObject.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Graphic.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Graphic.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Graphic.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Movable.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Movable.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Movable.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Renderable.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Renderable.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Renderable.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Scene.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Scene.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Scene.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/ShaderProgram.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/ShaderProgram.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/ShaderProgram.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Shape.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Shape.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Shape.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Shapes.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Shapes.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Shapes.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/Texture.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Texture.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/Texture.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/VertexArrayObject.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/VertexArrayObject.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/VertexArrayObject.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/GL/CMakeFiles/BlobGL.dir/VertexBufferObject.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/VertexBufferObject.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/VertexBufferObject.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm    -std=gnu++17 -o libs/BlobEngine/src/collision/CMakeFiles/BlobCollision.dir/CollisionDetector.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/CollisionDetector.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/collision/CollisionDetector.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/src/geometrie/CMakeFiles/BlobGeometrie.dir/Mat2.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Mat2.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Mat2.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/src/geometrie/CMakeFiles/BlobGeometrie.dir/Line.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Line.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Line.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include    -std=gnu++17 -o libs/BlobEngine/src/geometrie/CMakeFiles/BlobGeometrie.dir/Rectangle.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Rectangle.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/Rectangle.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/SceneManager.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/SceneManager.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/SceneManager.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Asset.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Asset.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Asset.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Buffer.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Buffer.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Buffer.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/BufferView.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/BufferView.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/BufferView.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Accessor.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Accessor.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Accessor.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Mesh.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Mesh.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Mesh.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Node.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Node.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Node.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Scene.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Scene.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Scene.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Material.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Material.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Material.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Texture.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Texture.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Texture.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Image.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Image.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Image.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/GL/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glfw/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/imgui -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/geometrie/../../include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glad/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/stb -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/glm -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/libs/json/single_include    -std=gnu++17 -o libs/BlobEngine/src/glTF2/CMakeFiles/BlobglTF2.dir/Sampler.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Sampler.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/glTF2/Sampler.cpp"
+},
+
+{
+  "directory": "/home/patapouf/Project/CppMonitor/build",
+  "command": "/usr/bin/c++   -I/home/patapouf/Project/BomberBlob/include -I/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/../../include    -std=gnu++17 -o libs/BlobEngine/src/Reader/CMakeFiles/BlobFileReader.dir/FileReader.cpp.o -c /home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/FileReader.cpp",
+  "file": "/home/patapouf/Project/BomberBlob/libs/BlobEngine/src/Reader/FileReader.cpp"
+}
+]
