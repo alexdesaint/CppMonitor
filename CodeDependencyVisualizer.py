@@ -163,8 +163,4 @@ for cc in compdb.getAllCompileCommands():
                 else:
                     unknownKind(cursor)
 
-
-folder = "test/"
-if not os.path.exists(folder):
-    os.makedirs(folder)
-umlFile.draw(folder)
+umlFile.draw("test")

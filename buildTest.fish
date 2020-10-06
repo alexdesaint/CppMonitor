@@ -1,1 +1,0 @@
-plantuml test/*.puml -tsvg

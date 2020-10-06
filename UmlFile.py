@@ -1,12 +1,10 @@
 import pygraphviz as gv
+import os
 
 
 class UmlNamespace:
     def __init__(self):
         self.namespace = []
-
-    def add(self, n):
-        self.namespace.append(n)
 
     def __hash__(self):
         return hash("::".join(self.namespace))
@@ -16,6 +14,9 @@ class UmlNamespace:
 
     def __str__(self):
         return "::".join(self.namespace)
+
+    def add(self, n):
+        self.namespace.append(n)
 
     def copy(self):
         r = UmlNamespace()
@@ -40,7 +41,7 @@ class UmlAttribubte:
         self.visibility = visibility
 
     def __str__(self):
-        return "\t" + self.visibility + self.name + " : " + str(self.type) + "\n"
+        return self.visibility + self.name + " : " + str(self.type)
 
 
 class UmlMethod:
@@ -58,11 +59,6 @@ class UmlMethod:
 
 
 class UmlClass:
-    LINK_TYPE_MAP = {
-        'inherit': '<|--',
-        'aggregation': 'o--',
-        'composition': '*--'
-    }
 
     def __init__(self, id, namespace, name):
         self.id = id
@@ -73,47 +69,8 @@ class UmlClass:
         self.attributes = {}
         self.methods = {}
 
-    def get_namespace_name(self):
-        return '::'.join(self.namespace.namespace + [self.name])
-
     def __str__(self):
-        r = ""
-        for ns in self.namespace.namespace:
-            r += "namespace " + ns + " {\n"
-
-        r += "class " + self.name
-        pdc = self.parentsDistant.copy()
-        for p in self.parents:
-            if p.namespace != self.namespace:
-                pdc.add(p.get_namespace_name())
-        if len(pdc) != 0:
-            r += "<<" + ', '.join(pdc) + ">>"
-        r += " {\n"
-
-        for a in self.attributes.values():
-            if a.type.umlClass is None:
-                r += str(a)
-            else:
-                if a.type.umlClass.namespace != self.namespace:
-                    r += str(a)
-
-        for m in self.methods.values():
-            r += str(m) + "\n"
-
-        r += "}\n"
-
-        for useless in self.namespace.namespace:
-            r += "}\n"
-
-        for p in self.parents:
-            if p.namespace == self.namespace:
-                r += p.get_namespace_name() + " --|> " + self.get_namespace_name() + "\n"
-
-        for a in self.attributes.values():
-            if a.type.umlClass is not None and a.type.umlClass.namespace == self.namespace:
-                r += a.type.umlClass.get_namespace_name() + " <--o " + self.get_namespace_name() + "\n"
-
-        return r
+        return '::'.join(self.namespace.namespace + [self.name])
 
 
 class UmlFile:
@@ -129,37 +86,31 @@ class UmlFile:
         self.umlClass = {}
         self.methods = {}
 
-    def __str__(self):
-        r = "@startuml\nset namespaceSeparator ::\nhide members\n"
-        for key, value in self.umlClass.items():
-            r += str(value)
-            r += "\n"
-
-        r += "@enduml\n"
-        return r
-
     def draw(self, path):
 
         database = {}
 
+        full = gv.AGraph(directed=True, strict=False, overlap=False)
+        full.node_attr["shape"] = "record"
         for c in self.umlClass.values():
             if c.namespace not in database:
                 database[c.namespace] = []
 
             database[c.namespace].append(c)
 
-        # plantUml per namespace
-        for k, d in database.items():
-            r = "@startuml\nset namespaceSeparator ::\n"
-            for c in d:
-                r += str(c)
-            r += "@enduml\n"
-            with open(path + str(k) + ".puml", "w") as f:
-                f.write(r)
+            cluster = full
+            namespace = []
+            for n in c.namespace.namespace:
+                namespace.append(n)
+                cl = cluster.get_subgraph(get_cluster_name(namespace))
+                if cl is None:
+                    cl = cluster.add_subgraph(name=get_cluster_name(namespace), label=n)
+                cluster = cl
+            cluster.add_node(c.id)
+
         # The compact diagram
         A = gv.AGraph(directed=True, strict=True, rankdir="LR")
         A.node_attr["shape"] = "tab"
-        # A.graph_attr["splines"] = "ortho"
         for k, d in database.items():
             label = "<<TABLE BORDER=\"0\" CELLBORDER=\"0\" CELLSPACING=\"0\"><TR><TD>" + str(k) + "</TD></TR><TR><TD><TABLE BORDER=\"0\" CELLBORDER=\"1\" >"
             for c in d:
@@ -173,22 +124,26 @@ class UmlFile:
                         A.add_edge(str(p.namespace), str(c.namespace), arrowtail="empty", dir="back")
             A.add_node(k, label=label + "</TABLE></TD></TR></TABLE>>")
         A.layout()
-        A.draw(path + "compact.svg", prog='dot')
+        if not os.path.exists(path):
+            os.makedirs(path)
+        A.draw(path + "/compact.svg", prog='dot')
 
         # The all diagram
         for k, d in database.items():
-            A = gv.AGraph(directed=True, strict=False)
+            A = gv.AGraph(directed=True, strict=False, overlap=False)
             A.node_attr["shape"] = "record"
+
             # A.graph_attr["splines"] = "ortho"
 
             for c in d:
                 text = c.name
                 e = []
                 for p in c.parents:
+                    full.add_edge(p.id, c.id, arrowtail="empty", dir="back")
                     if p.namespace == c.namespace:
                         A.add_edge(p.id, c.id, arrowtail="empty", dir="back")
                     else:
-                        e.append(p.get_namespace_name())
+                        e.append(str(p))
 
                 if e:
                     text = '\\n'.join(e) + '|' + text
@@ -196,13 +151,15 @@ class UmlFile:
                 e = []
 
                 for a in c.attributes.values():
+                    if a.type.umlClass is not None:
+                        full.add_edge(a.type.umlClass.id, c.id, arrowhead="ediamond", arrowtail="normal", dir="both")
                     if a.type.umlClass is not None and a.type.umlClass.namespace == c.namespace:
                         A.add_edge(a.type.umlClass.id, c.id, arrowhead="ediamond", arrowtail="normal", dir="both")
                     else:
-                        e.append(a.name)
+                        e.append(str(a))
 
                 if e:
-                    text += '||' + '\\n'.join(e)
+                    text += '|' + '\\n'.join(e)
 
                 e = []
 
@@ -211,12 +168,33 @@ class UmlFile:
 
                 if e:
                     text += '|' + '\\n'.join(e)
+                A.add_node(c.id, label='{' + text.replace('<', '\\<').replace('>', '\\>') + '}')
+                full.get_node(c.id).attr["label"] = '{' + text.replace('<', '\\<').replace('>', '\\>') + '}'
 
-                A.add_node(c.id, label= '{' + text + '}')
+            # p = None
+            # for n in [path] + k.namespace:
+            #     if p is None:
+            #         p = n
+            #     else:
+            #         p += "/" + n
+            #     if not os.path.exists(p):
+            #         os.makedirs(p)
 
-            A.layout()
-            A.draw(path + str(k) + "_gv.svg", prog='dot')
+            A.unflatten('-f -l 40 -c 40')
+            # A.write(p + "/" + str(k) + ".dot")
+            A.layout(prog='dot')
+            A.draw(path + "/" + str(k) + ".svg")
+        full.unflatten('-f -l 400 -c 400')
+        # full.write(path + "/main.dot")
+        full.layout(prog='dot')
+        full.draw(path + "/main.svg")
 
+            # A.write(path + str(k) + "ccomps.dot")
+
+            # A.layout(prog='dot').draw(path + str(k) + "_gv.svg")
+            # A.from_string(A._run_prog("unflatten", '-f -l 40 -c 40'))
+            # A.from_string(A._run_prog("gvpack", '-array1'))
+            # A.layout(prog='dot')
 
 def get_cluster_name(namespace):
     return 'cluster_' + '_'.join(namespace)
