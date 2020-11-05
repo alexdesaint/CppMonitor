@@ -183,18 +183,12 @@ class UmlFile:
             A.unflatten('-f -l 40 -c 40')
             # A.write(p + "/" + str(k) + ".dot")
             A.layout(prog='dot')
-            A.draw(path + "/" + str(k) + ".svg")
+            A.draw(path + "/" + str(k).replace('::', '_') + ".svg")
         full.unflatten('-f -l 400 -c 400')
         # full.write(path + "/main.dot")
         full.layout(prog='dot')
         full.draw(path + "/main.svg")
 
-            # A.write(path + str(k) + "ccomps.dot")
-
-            # A.layout(prog='dot').draw(path + str(k) + "_gv.svg")
-            # A.from_string(A._run_prog("unflatten", '-f -l 40 -c 40'))
-            # A.from_string(A._run_prog("gvpack", '-array1'))
-            # A.layout(prog='dot')
 
 def get_cluster_name(namespace):
     return 'cluster_' + '_'.join(namespace)
