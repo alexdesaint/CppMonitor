@@ -1,3 +1,8 @@
 __pycache__/
 .idea/
 __pycache__/
+test/
+build/
+.cache/
+.ninja_log
+cmake-build-debug/

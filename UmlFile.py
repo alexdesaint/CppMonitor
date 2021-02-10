@@ -1,5 +1,6 @@
 import pygraphviz as gv
 import os
+import json
 
 
 class UmlNamespace:
@@ -13,7 +14,10 @@ class UmlNamespace:
         return "::".join(self.namespace) == "::".join(other.namespace)
 
     def __str__(self):
-        return "::".join(self.namespace)
+        if len(self.namespace) == 0:
+            return "::"
+        else:
+            return "::".join(self.namespace)
 
     def add(self, n):
         self.namespace.append(n)
@@ -59,7 +63,6 @@ class UmlMethod:
 
 
 class UmlClass:
-
     def __init__(self, id, namespace, name):
         self.id = id
         self.name = name
@@ -85,6 +88,11 @@ class UmlFile:
     def __init__(self):
         self.umlClass = {}
         self.methods = {}
+
+    def toJSON(self):
+        for u in self.umlClass.values():
+            print(json.dumps(u.__dict__))
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
     def draw(self, path):
 
@@ -122,6 +130,8 @@ class UmlFile:
                 for p in c.parents:
                     if p.namespace != c.namespace:
                         A.add_edge(str(p.namespace), str(c.namespace), arrowtail="empty", dir="back")
+            print(k)
+            print(label)
             A.add_node(k, label=label + "</TABLE></TD></TR></TABLE>>")
         A.layout()
         if not os.path.exists(path):

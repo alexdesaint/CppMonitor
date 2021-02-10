@@ -135,32 +135,38 @@ index = clang.cindex.Index.create()
 
 umlFile = UmlFile()
 
-jsonCompileCommand = '../BlobEngine/cmake-build-debug/'
-
-compdb = clang.cindex.CompilationDatabase.fromDirectory(jsonCompileCommand)
-
-source_folder = os.path.abspath('../BlobEngine/src/')
+jsonCompileCommand = '../BlobEngine/build/'
+source_folder = os.path.abspath('../BlobEngine/src')
 include_folder = os.path.abspath('../BlobEngine/include')
+os.chdir(jsonCompileCommand)
+compdb = clang.cindex.CompilationDatabase.fromDirectory("./")
 
 for cc in compdb.getAllCompileCommands():
     if os.path.abspath(cc.filename).startswith(source_folder):
     # if cc.filename == os.path.abspath('../BlobEngine/src/glTF2/SceneManager.cpp'):
+        print(cc.filename)
         clangArgs = []
         for a in cc.arguments:
             clangArgs.append(a)
         clangArgs.pop(0)
         clangArgs.remove(cc.filename)
-        clangArgs.append('-I/lib/clang/10.0.1/include')
+        clangArgs.append('-I/lib/clang/11.0.1/include') # TODO: use clang -print-search-dirs
 
         tu = index.parse(cc.filename, args=clangArgs,
                          options=clang.cindex.TranslationUnit.PARSE_SKIP_FUNCTION_BODIES)
 
+        for diagnostic in tu.diagnostics:
+            print(diagnostic)
         for cursor in tu.cursor.get_children():
             current_file = os.path.abspath(str(cursor.location.file))
             if current_file.startswith(source_folder) or current_file.startswith(include_folder):
+                print("    " + current_file)
                 if cursor.kind in actions:
                     actions[cursor.kind](cursor)
                 else:
                     unknownKind(cursor)
+        break
 
-umlFile.draw("test")
+print(umlFile.toJSON())
+
+# umlFile.draw("test")
